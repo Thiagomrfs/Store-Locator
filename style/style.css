@@ -1,6 +1,163 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    height: 100%;
-    margin: 0;
-    padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+}
+
+body #map {
+	width: 100%;
+	height: 100%;
+}
+
+.proj_title {
+	position: absolute;
+	z-index: 100;
+	font-size: 50px;
+	font-weight: bold;
+	color: #333;
+	text-transform: uppercase;
+	top: 70px;
+	left: 90px;
+}
+
+.search-container {
+	position: absolute;
+	z-index: 100;
+	top: 145px;
+	left: 90px;
+	background: #454E53;
+	width: 350px;
+	height: 50px;
+	border-radius: 30px;
+	display: flex;
+}
+
+.search {
+	flex-grow: 1;
+	display: flex;
+	align-items: center;
+}
+
+.search i:hover {
+	cursor: pointer;
+}
+
+#zip-code-input {
+	padding-left: 15px;
+	color: aliceblue;
+	background: transparent;
+	border: none;
+	font-size: 20px;
+	width: 85%;
+}
+
+#zip-code-input:focus {
+	outline: none;
+}
+
+.search-container i {
+	color: white;
+	font-size: 21px;
+}
+
+.waiting-zip-code {
+	text-align: center;
+	padding-top: 55%;
+	font-size: 20px;
+}
+
+.store-list-container {
+	background: white;
+	border-radius: 15px;
+	position: absolute;
+	z-index: 100;
+	width: 300px;
+	left: 90px;
+	top: 210px;
+	bottom: 20px;
+	overflow: auto;
+	overflow-y: auto;
+}
+
+.store-container {
+	padding: 12px;
+	padding-bottom: 5px;
+	display: flex;
+	border-bottom: #979797 1px solid;
+}
+
+.store-container .store-address {
+	padding-top: 4px;
+}
+
+.store-container .store-phone {
+	padding-top: 4px;
+	font-size: 13px;
+	color: #575757;
+	padding-bottom: 2px;
+}
+
+.store-info {
+	flex-grow: 1;
+}
+
+.store-number-container {
+	display: flex;
+	align-items: center;
+}
+
+.store-number {
+	color: whitesmoke;
+	background: #454e53;
+	font-size: 15px;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.store-container span {
+	display: block;
+}
+
+.store-container:hover {
+	background: #9e9e9e;
+	transition: 800ms ease-in-out;
+	cursor: pointer;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.Store-info-pop {
+	min-width: 300px;
+	font-size: 14px;
+}
+
+.Store-info-pop .Store-info-name{
+	font-size: 18px;
+	font-weight: bold;
+	padding: 5px;
+}
+
+.Store-info-pop .Store-info-address{
+	padding: 5px;
+
+}
+
+.Store-info-pop .Store-info-status{
+	padding: 5px;
+
+}
+
+.Store-info-pop .Store-info-phone{
+	padding: 5px;
+
+}
+
+.Store-info-pop .Store-info-status i, .Store-info-pop .Store-info-phone i {
+	width: 30px;
+    font-size: 20px;
 }

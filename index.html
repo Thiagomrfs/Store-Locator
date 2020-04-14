@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>EPIC STORE LOCATOR</title>
+		<script src="js/store-data.js"></script>
+		<script src="js/index.js"></script>
+		<link rel="stylesheet" href="style/style.css">
+		<script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+	</head>
+
+	<body>
+		<div class="search-container">
+			<div class="search">
+				<input id="zip-code-input" placeholder="Enter Zip" type="text"/>
+				<i class="fas fa-search" onclick="searchStores()"></i>
+			</div>
+		</div>
+		<div class="store-list-container">
+			<div class="store-list">
+				<!-- <div class="store-container">
+					<div class="store-info">
+						<div class="store-address">
+							<span>8480 Beverly Blvd.</span>
+							<span>Los Angeles, CA 90048</span>
+						</div>
+						<div class="store-phone">
+							999-999-9999
+						</div>
+					</div>
+					<div class="store-number-container"> 
+						<div class="store-number">
+							1
+						</div>
+					</div>
+				</div> -->
+				
+				<div class="waiting-zip-code">
+					please insert the <br/>zip code
+				</div>
+			</div>
+		</div>
+		<div class="proj_title">Store Locator</div>
+		<div id="map" style="width: 100%; height: 100%;"></div>
+		<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcwazb-T7zvceyA4VLWVB-eXvwj-XEUIA&callback=initMap">
+    </script>
+
+	</body>
+
+</html>
